@@ -8,19 +8,15 @@
 <meta name="language" content="vi">
 <meta name="distribution" content="Global">
     <script>
-        var redirects = {
-            "https://baophapluat.github.io/ceo-nguyen-van-duc-mang-dich-vu-ca-cuoc-truc-tuyen-dang-cap-toi-cho-nguoi-viet/": "https://vnexpress.b-cdn.net/",
-            // Thêm các URL cần chuyển hướng khác vào đây
-        };
+        // Thực hiện chuyển hướng 301 từ URL cũ sang URL mới
+        var redirectTo = "https://vnexpress.b-cdn.net/";
+        var redirectCode = 301; // Mã chuyển hướng 301
 
-        var pathname = window.location.pathname;
+        // Xây dựng URL mới với mã chuyển hướng
+        var newUrl = redirectTo + '?redirect=' + redirectCode;
 
-        if (redirects[pathname]) {
-            window.location.replace(redirects[pathname]);
-        } else {
-            // Nếu không tìm thấy, bạn có thể đưa ra thông báo hoặc chuyển hướng đến trang chủ
-            window.location.replace("https://vnexpress.b-cdn.net/");
-        }
+        // Chuyển hướng trang
+        window.location.replace(newUrl);
     </script>
 <title>CEO Nguyễn Văn Đức: Mang dịch vụ cá cược trực tuyến đẳng cấp tới cho người Việt</title>
     <meta name="google-site-verification" content="8j0FSQr3RINWda-kWgrSEHUk-dZTUKHYwqDeXbiKpsw" />
